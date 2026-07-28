@@ -1,0 +1,18 @@
+{
+  // Heirs Technologies Engineering Handbook — markdown lint rules.
+  // See https://github.com/DavidAnson/markdownlint for rule descriptions.
+  "config": {
+    "default": true,
+    "MD003": { "style": "atx" },          // ATX-style headings only
+    "MD004": { "style": "dash" },         // consistent unordered list marker
+    "MD013": false,                       // line length: prose wraps freely
+    "MD024": { "siblings_only": true },   // allow repeated headings in different sections
+    "MD025": true,                        // single H1 per document
+    "MD033": false,                       // inline HTML allowed (index markers, template tags)
+    "MD034": true,                        // no bare URLs
+    "MD040": true,                        // fenced code blocks must declare a language
+    "MD041": false                        // first line is frontmatter, not the H1
+  },
+  "globs": ["**/*.md"],
+  "ignores": ["node_modules", "docs/_source/**"]
+}

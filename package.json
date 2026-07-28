@@ -1,0 +1,25 @@
+{
+  "name": "engineering-handbook",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Heirs Technologies Engineering Handbook — standards, templates, and checklists.",
+  "type": "module",
+  "scripts": {
+    "lint:md": "markdownlint-cli2",
+    "lint:links": "lychee --config .lycheeignore './**/*.md'",
+    "validate": "tsx scripts/validate-structure.ts",
+    "index": "tsx scripts/generate-index.ts",
+    "format": "prettier --write '**/*.md'"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "^0.13.0",
+    "prettier": "^3.3.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.0"
+  },
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": []
+}

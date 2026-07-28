@@ -1,0 +1,44 @@
+name: docs
+
+on:
+  pull_request:
+    paths:
+      - 'docs/**'
+      - 'scripts/**'
+      - '*.md'
+      - '.markdownlint-cli2.jsonc'
+      - '.prettierrc'
+      - '.lycheeignore'
+      - '.github/workflows/docs.yml'
+  push:
+    branches: [<DEFAULT_BRANCH>]
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Lint markdown
+        run: pnpm lint:md
+
+      - name: Check links
+        run: pnpm lint:links
+
+      - name: Validate structure
+        run: pnpm validate
+
+      - name: Check generated indexes
+        run: pnpm index --check

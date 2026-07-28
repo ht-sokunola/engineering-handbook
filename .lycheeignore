@@ -1,0 +1,8 @@
+# Link patterns lychee should not try to resolve.
+# Placeholders used throughout the handbook until real values are filled in.
+https?://<COMPANY_DOMAIN>.*
+.*<[A-Z_]+>.*
+# Local dev / example hosts
+https?://localhost.*
+https?://127\.0\.0\.1.*
+https?://example\.(com|org).*

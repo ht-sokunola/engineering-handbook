@@ -1,0 +1,29 @@
+# Ownership map for the Heirs Technologies Engineering Handbook.
+
+# Each top-level section is owned by a placeholder team.
+
+# TODO(owner): replace every <TEAM\_\*> placeholder with a real GitHub team handle.
+
+# Repo-wide default — the group that stewards the handbook itself.
+
+* @<ORG>/<TEAM_ENGINEERING_STANDARDS>
+
+# Tooling and CI
+
+/scripts/ @<ORG>/<TEAM_PLATFORM>
+/.github/ @<ORG>/<TEAM_PLATFORM>
+
+# Sections
+
+/docs/01-engineering-principles/ @<ORG>/<TEAM_ENGINEERING_LEADERSHIP>
+/docs/02-people-and-responsibilities/ @<ORG>/<TEAM_ENGINEERING_LEADERSHIP>
+/docs/03-development-standards/ @<ORG>/<TEAM_ENGINEERING_STANDARDS>
+/docs/04-architecture/ @<ORG>/<TEAM_ARCHITECTURE>
+/docs/05-security/ @<ORG>/<TEAM_SECURITY>
+/docs/06-quality-engineering/ @<ORG>/<TEAM_QUALITY>
+/docs/07-documentation/ @<ORG>/<TEAM_ENGINEERING_STANDARDS>
+/docs/08-delivery/ @<ORG>/<TEAM_PLATFORM>
+/docs/09-operations/ @<ORG>/<TEAM_SRE>
+/docs/10-governance/ @<ORG>/<TEAM_ENGINEERING_LEADERSHIP>
+/docs/11-templates/ @<ORG>/<TEAM_ENGINEERING_STANDARDS>
+/docs/12-checklists/ @<ORG>/<TEAM_ENGINEERING_STANDARDS>
