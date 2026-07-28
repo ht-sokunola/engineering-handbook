@@ -5,20 +5,17 @@ principles, standards, architecture and security practices, delivery and
 operations playbooks, and the templates and checklists that put them to work.
 
 If you write, review, ship, or operate code here, this is the book you reach for
-when you need to know *how we do it* — and the place you propose a change when
+when you need to know _how we do it_ — and the place you propose a change when
 "how we do it" should be different.
-
-> **TODO(owner):** Confirm the canonical home for this handbook (repository URL,
-> and whether it is later mirrored to a docs site). Placeholder: `<COMPANY_DOMAIN>`.
 
 ## How this handbook is organised
 
 The whole repository hangs on one structural rule:
 
-| A heading that… | is represented as… |
-| --- | --- |
-| **has sub-topics** | a **folder** with a `README.md` preface that introduces the area and indexes its children |
-| **has no sub-topics** | a single **markdown file** — the leaf page that states the actual standard |
+| A heading that…       | is represented as…                                                                        |
+| --------------------- | ----------------------------------------------------------------------------------------- |
+| **has sub-topics**    | a **folder** with a `README.md` preface that introduces the area and indexes its children |
+| **has no sub-topics** | a single **markdown file** — the leaf page that states the actual standard                |
 
 Nesting is unbounded and follows the same rule at every level: a leaf page can
 sit one level deep or five. Every folder has exactly one `README.md`; every leaf
@@ -69,10 +66,3 @@ pnpm index            # regenerate indexes after adding or renaming pages
 To propose a change — from a typo to a new standard — read
 [`CONTRIBUTING.md`](CONTRIBUTING.md). Standards changes follow a heavier review
 path than fixes, and some require an RFC.
-
-## Status
-
-This handbook is being seeded. Many pages are stubs marked with a
-`> **TODO:**` describing exactly what they must answer. Company-specific values
-that must not be guessed appear as `<PLACEHOLDER>` tokens with an accompanying
-TODO. Pick up any stub and fill it in via the process above.
