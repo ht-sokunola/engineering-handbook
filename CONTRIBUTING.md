@@ -27,10 +27,10 @@ children. Nesting is unbounded and follows the same rule at every level.
   ---
   title: Commit Standards
   summary: How we write commit messages and what the tooling enforces.
-  status: draft            # draft | review | adopted
+  status: draft # draft | review | adopted
   owner: <TEAM_OR_ROLE>
   last_reviewed: 2026-07-28
-  applies_to: [backend, frontend]   # omit if universal
+  applies_to: [backend, frontend] # omit if universal
   ---
   ```
 
@@ -68,7 +68,7 @@ Use these placeholders consistently: `<COMPANY>`, `<COMPANY_DOMAIN>`, `<ENG_ORG>
 
 ## Proposing a change
 
-1. **Open an issue** using the *Handbook change* template, or go straight to a PR
+1. **Open an issue** using the _Handbook change_ template, or go straight to a PR
    for small fixes.
 2. **Make the change on a branch**, keeping frontmatter complete and `title` in
    sync with the H1.
@@ -80,6 +80,7 @@ Use these placeholders consistently: `<COMPANY>`, `<COMPANY_DOMAIN>`, `<ENG_ORG>
 
    If you added or renamed pages, run `pnpm index` to regenerate the affected
    indexes and commit the result.
+
 4. **Open a PR** using the template. CI runs the same checks.
 5. **Get review** from the owning team (see [`CODEOWNERS`](CODEOWNERS)).
 
@@ -88,11 +89,11 @@ content, `chore:` for tooling and config, `feat:` for new scripts.
 
 ## Which review path?
 
-| Change | Path | Approval |
-| --- | --- | --- |
-| Typo, formatting, broken link | Fast path — single reviewer | Any handbook maintainer |
-| Clarifying existing wording without changing intent | Standard PR | Owning team (CODEOWNERS) |
-| New standard, or a change to what a standard *requires* | **RFC first**, then PR | Owning team + affected teams |
+| Change                                                  | Path                        | Approval                     |
+| ------------------------------------------------------- | --------------------------- | ---------------------------- |
+| Typo, formatting, broken link                           | Fast path — single reviewer | Any handbook maintainer      |
+| Clarifying existing wording without changing intent     | Standard PR                 | Owning team (CODEOWNERS)     |
+| New standard, or a change to what a standard _requires_ | **RFC first**, then PR      | Owning team + affected teams |
 
 ### When an RFC is required
 

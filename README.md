@@ -34,18 +34,18 @@ the full conventions and the change process.
 
 <!-- index:start -->
 
-- [01 · Engineering Principles](docs/01-engineering-principles/README.md) — the principles and decision framework everything else derives from.
-- [02 · People and Responsibilities](docs/02-people-and-responsibilities/README.md) — roles, ownership, and who decides what.
-- [03 · Development Standards](docs/03-development-standards/README.md) — identity, repositories, version control, and per-language backend/frontend standards.
-- [04 · Architecture](docs/04-architecture/README.md) — architectural styles, dependency rules, decision records, diagrams, API and database standards.
-- [05 · Security](docs/05-security/README.md) — secure coding, secrets, auth, encryption, scanning, and threat modelling.
-- [06 · Quality Engineering](docs/06-quality-engineering/README.md) — testing, regression, performance testing, and accessibility.
-- [07 · Documentation](docs/07-documentation/README.md) — what every repository must document, and how we write and diagram.
+- [01 · Engineering Principles](docs/01-engineering-principles/README.md) — The principles and decision framework everything else derives from.
+- [02 · People and Responsibilities](docs/02-people-and-responsibilities/README.md) — Roles, ownership, and who decides what.
+- [03 · Development Standards](docs/03-development-standards/README.md) — Identity, repositories, version control, and per-language backend/frontend standards.
+- [04 · Architecture](docs/04-architecture/README.md) — Architectural styles, dependency rules, decision records, diagrams, API and database standards.
+- [05 · Security](docs/05-security/README.md) — Secure coding, secrets, auth, encryption, scanning, and threat modelling.
+- [06 · Quality Engineering](docs/06-quality-engineering/README.md) — Testing, regression, performance testing, and accessibility.
+- [07 · Documentation](docs/07-documentation/README.md) — What every repository must document, and how we write and diagram.
 - [08 · Delivery](docs/08-delivery/README.md) — CI/CD, environments, deployment strategies, backward compatibility, change and release management.
-- [09 · Operations](docs/09-operations/README.md) — observability, incident management, runbooks, and performance.
-- [10 · Governance](docs/10-governance/README.md) — technical debt, dependencies, licences, and engineering metrics.
-- [11 · Templates](docs/11-templates/README.md) — copyable ADR, RFC, design doc, incident, runbook, and review templates.
-- [12 · Checklists](docs/12-checklists/README.md) — new service, pull request, release, onboarding, and decommission checklists.
+- [09 · Operations](docs/09-operations/README.md) — Observability, incident management, runbooks, and performance.
+- [10 · Governance](docs/10-governance/README.md) — Technical debt, dependencies, licences, and engineering metrics.
+- [11 · Templates](docs/11-templates/README.md) — Copyable ADR, RFC, design doc, incident, runbook, and review templates.
+- [12 · Checklists](docs/12-checklists/README.md) — New service, pull request, release, onboarding, and decommission checklists.
 
 <!-- index:end -->
 

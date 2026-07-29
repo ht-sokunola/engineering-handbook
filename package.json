@@ -6,12 +6,15 @@
   "type": "module",
   "scripts": {
     "lint:md": "markdownlint-cli2",
-    "lint:links": "lychee --config .lycheeignore './**/*.md'",
+    "lint:links": "markdown-link-check --quiet --config .markdown-link-check.json --ignore docs/_source README.md CONTRIBUTING.md docs",
     "validate": "tsx scripts/validate-structure.ts",
     "index": "tsx scripts/generate-index.ts",
+    "typecheck": "tsc --noEmit",
     "format": "prettier --write '**/*.md'"
   },
   "devDependencies": {
+    "@types/node": "^20.14.0",
+    "markdown-link-check": "^3.15.0",
     "markdownlint-cli2": "^0.13.0",
     "prettier": "^3.3.0",
     "tsx": "^4.16.0",

@@ -12,7 +12,7 @@ last_reviewed: 2026-07-28
 
 ## Rules
 
-> **TODO:** Numbered, testable statements. What *must*, *should*, and *may* engineers do here?
+> **TODO:** Numbered, testable statements. What _must_, _should_, and _may_ engineers do here?
 
 ## Rationale
 

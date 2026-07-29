@@ -6,13 +6,13 @@ owner: <TEAM_OR_ROLE>
 last_reviewed: 2026-07-28
 ---
 
-# C#
+# C\#
 
 > **TODO:** State in 1–3 sentences what this page governs.
 
 ## Rules
 
-> **TODO:** Numbered, testable statements. What *must*, *should*, and *may* engineers do here?
+> **TODO:** Numbered, testable statements. What _must_, _should_, and _may_ engineers do here?
 
 ## Rationale
 

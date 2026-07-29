@@ -1,0 +1,14 @@
+{
+  "ignorePatterns": [
+    { "pattern": "<[A-Za-z0-9_]+>" },
+    { "pattern": "^https?://localhost" },
+    { "pattern": "^https?://127\\.0\\.0\\.1" },
+    { "pattern": "^https?://(www\\.)?example\\.(com|org)" }
+  ],
+  "replacementPatterns": [],
+  "aliveStatusCodes": [200, 206, 301, 302, 308],
+  "timeout": "20s",
+  "retryOn429": true,
+  "retryCount": 3,
+  "fallbackRetryDelay": "10s"
+}
