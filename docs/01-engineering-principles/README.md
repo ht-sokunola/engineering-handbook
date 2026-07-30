@@ -23,7 +23,7 @@ debate and every reviewer argues from a different place.
 ## How to use this section
 
 Read the principles once, so you recognise them when they show up in review comments.
-Reach for the [Decision Framework](../decision-framework.md) whenever you are about to
+Reach for the [Decision Framework](decision-framework.md) whenever you are about to
 build, buy, or change something significant — it is the ten questions every non-trivial
 decision should survive.
 
@@ -31,7 +31,7 @@ decision should survive.
 
 <!-- index:start -->
 
-- [Decision Framework](decision-framework.md) — The engineering decision framework is a top-level page — see the canonical version.
+- [Decision Framework](decision-framework.md) — Ten questions to run any build, buy, or significant-change decision through before you commit to it.
 - [Principles](principles.md) — Standards and guidance for principles.
 
 <!-- index:end -->

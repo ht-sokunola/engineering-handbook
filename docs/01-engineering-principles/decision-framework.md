@@ -34,18 +34,18 @@ The cost of a wrong decision is dominated by how hard it is to undo. Classify it
 
 ## Quick reference
 
-| #   | Question                                           | What you are really checking        | Governed by                                                            |
-| --- | -------------------------------------------------- | ----------------------------------- | ---------------------------------------------------------------------- |
-| 1   | Does this solve the actual problem?                | Problem is named, not assumed       | [Principles](01-engineering-principles/principles.md)                  |
-| 2   | Is there an existing solution in the organisation? | Reuse before adopt before build     | [Ownership](02-people-and-responsibilities/ownership-model.md)         |
-| 3   | Can it be simpler?                                 | The smallest thing that works       | [Principles](01-engineering-principles/principles.md)                  |
-| 4   | Will it still make sense in two years?             | Longevity, not just today's scale   | [Architecture](04-architecture/README.md)                              |
-| 5   | Is it observable?                                  | You can tell if it is healthy       | [Observability](09-operations/observability/README.md)                 |
-| 6   | Is it secure?                                      | New attack surface is accounted for | [Security](05-security/README.md)                                      |
-| 7   | Is it backwards compatible?                        | Nothing downstream silently breaks  | [Backward Compatibility](08-delivery/backward-compatibility/README.md) |
-| 8   | Can it be rolled back safely?                      | A tested way to undo it             | [Promotion and Rollback](08-delivery/ci-cd/promotion-and-rollback.md)  |
-| 9   | What is the operational cost?                      | Someone owns the running cost       | [Runbooks](09-operations/runbooks.md)                                  |
-| 10  | What technical debt does this introduce?           | The debt is named and scheduled     | [Technical Debt](10-governance/technical-debt.md)                      |
+| #   | Question                                           | What you are really checking        | Governed by                                                               |
+| --- | -------------------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------- |
+| 1   | Does this solve the actual problem?                | Problem is named, not assumed       | [Principles](principles.md)                                               |
+| 2   | Is there an existing solution in the organisation? | Reuse before adopt before build     | [Ownership](../02-people-and-responsibilities/ownership-model.md)         |
+| 3   | Can it be simpler?                                 | The smallest thing that works       | [Principles](principles.md)                                               |
+| 4   | Will it still make sense in two years?             | Longevity, not just today's scale   | [Architecture](../04-architecture/README.md)                              |
+| 5   | Is it observable?                                  | You can tell if it is healthy       | [Observability](../09-operations/observability/README.md)                 |
+| 6   | Is it secure?                                      | New attack surface is accounted for | [Security](../05-security/README.md)                                      |
+| 7   | Is it backwards compatible?                        | Nothing downstream silently breaks  | [Backward Compatibility](../08-delivery/backward-compatibility/README.md) |
+| 8   | Can it be rolled back safely?                      | A tested way to undo it             | [Promotion and Rollback](../08-delivery/ci-cd/promotion-and-rollback.md)  |
+| 9   | What is the operational cost?                      | Someone owns the running cost       | [Runbooks](../09-operations/runbooks.md)                                  |
+| 10  | What technical debt does this introduce?           | The debt is named and scheduled     | [Technical Debt](../10-governance/technical-debt.md)                      |
 
 ## The ten questions
 
@@ -56,7 +56,7 @@ sentence, you are not ready to choose a solution.
 
 - **Good signs:** the problem is measurable; you can say what "solved" looks like; the solution maps directly to the need.
 - **Red flags:** the solution came first and you are reverse-engineering a problem for it; "we might need it later"; solving a symptom, not the cause.
-- See: [Engineering Principles](01-engineering-principles/principles.md).
+- See: [Engineering Principles](principles.md).
 
 ### 2. Is there an existing solution in the organisation?
 
@@ -65,7 +65,7 @@ beats a new thing to learn, operate, and own.
 
 - **Good signs:** you checked with other teams and the platform; an existing service or library covers most of the need.
 - **Red flags:** building in isolation; a second implementation of something we already run; "ours will be better" without evidence.
-- See: [Ownership Model](02-people-and-responsibilities/ownership-model.md).
+- See: [Ownership Model](../02-people-and-responsibilities/ownership-model.md).
 
 ### 3. Can it be simpler?
 
@@ -90,7 +90,7 @@ without SSH-ing into a box.
 
 - **Good signs:** logs, metrics, traces, and alerts are part of the design, not bolted on later.
 - **Red flags:** no way to see it working; alerting "to be added"; failures only surface as user complaints.
-- See: [Observability](09-operations/observability/README.md).
+- See: [Observability](../09-operations/observability/README.md).
 
 ### 6. Is it secure?
 
@@ -99,7 +99,7 @@ surface you are adding. New dependencies and new services both widen what an att
 
 - **Good signs:** least privilege by default; secrets managed, not embedded; data classified and protected in transit and at rest.
 - **Red flags:** a new public endpoint with no threat model; a dependency no one has vetted; "we'll secure it before launch".
-- See: [Security](05-security/README.md).
+- See: [Security](../05-security/README.md).
 
 ### 7. Is it backwards compatible?
 
@@ -108,7 +108,7 @@ versions. If the change breaks compatibility, it needs a migration and a depreca
 
 - **Good signs:** additive changes; versioned interfaces; a plan for existing consumers.
 - **Red flags:** changing a field's meaning in place; removing something still in use; assuming all clients update at once.
-- See: [Backward Compatibility](08-delivery/backward-compatibility/README.md).
+- See: [Backward Compatibility](../08-delivery/backward-compatibility/README.md).
 
 ### 8. Can it be rolled back safely?
 
@@ -117,7 +117,7 @@ be honest about which parts cannot be undone.
 
 - **Good signs:** deploys are reversible; migrations are expand/contract; rollback is tested, not theoretical.
 - **Red flags:** a destructive migration with no path back; state that cannot be reconstructed; "we just won't need to roll back".
-- See: [Promotion and Rollback](08-delivery/ci-cd/promotion-and-rollback.md).
+- See: [Promotion and Rollback](../08-delivery/ci-cd/promotion-and-rollback.md).
 
 ### 9. What is the operational cost?
 
@@ -126,7 +126,7 @@ Someone has to operate this — name them, and make sure a runbook will exist.
 
 - **Good signs:** the owning team is identified and agrees; cost is estimated; toil is designed out where possible.
 - **Red flags:** no named owner; recurring manual work with every use; cost that grows faster than the value it delivers.
-- See: [Runbooks](09-operations/runbooks.md).
+- See: [Runbooks](../09-operations/runbooks.md).
 - > **TODO(owner):** confirm the recurring-spend threshold above which a decision needs finance/architecture sign-off. Placeholder: `<COST_SIGNOFF_THRESHOLD>`.
 
 ### 10. What technical debt does this introduce?
@@ -136,7 +136,7 @@ trade-off explicit and say how it will be paid down.
 
 - **Good signs:** shortcuts are documented with a ticket and a trigger for repayment; the debt is a conscious choice.
 - **Red flags:** "temporary" solutions with no removal date; TODOs that never become tickets; debt taken on silently.
-- See: [Technical Debt](10-governance/technical-debt.md).
+- See: [Technical Debt](../10-governance/technical-debt.md).
 
 ## Build, buy, or subscribe?
 
@@ -169,8 +169,8 @@ flowchart TD
 
 For anything significant or hard to reverse, the reasoning must outlive the conversation:
 
-- **Architecture-level or long-lived** → write an [ADR](04-architecture/decision-records/README.md).
-- **Cross-team or needs buy-in before building** → raise an [RFC](08-delivery/change-management/rfc-process.md).
+- **Architecture-level or long-lived** → write an [ADR](../04-architecture/decision-records/README.md).
+- **Cross-team or needs buy-in before building** → raise an [RFC](../08-delivery/change-management/rfc-process.md).
 
 A good record shows:
 

@@ -38,5 +38,6 @@ anything with consumers beyond your own service.
 - [Dependency Rules](dependency-rules.md) — Standards and guidance for dependency rules.
 - [Diagrams](diagrams/README.md) — Overview of diagrams: what it covers and what lives inside it.
 - [Styles](styles/README.md) — Overview of styles: what it covers and what lives inside it.
+- [Twelve-Factor App](twelve-factor-app.md) — The twelve-factor methodology for building deployable, disposable, cloud-native services — and where each factor is governed.
 
 <!-- index:end -->
