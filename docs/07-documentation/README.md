@@ -3,22 +3,26 @@ title: Documentation
 summary: What every repository must document, and how we write and diagram.
 status: draft
 owner: <TEAM_OR_ROLE>
-last_reviewed: 2026-07-28
+last_reviewed: 2026-07-30
 ---
 
 # Documentation
 
 ## What this covers
 
-> **TODO:** Describe the scope of the Documentation section in prose.
+What every repository must document, how we write it, and how we diagram it.
 
 ## Why it matters
 
-> **TODO:** Explain why this area exists and the cost of getting it wrong.
+An undocumented system has a bus factor of one. Documentation is what lets someone other
+than the author operate, extend, or safely change a system — and what stops hard-won
+context from leaving with the person who had it.
 
 ## How to use this section
 
-> **TODO:** Tell the reader how to navigate and apply the pages below.
+Make sure your repository carries the [required documents](required-per-repository.md).
+Follow the [writing-style](writing-style.md) and [diagramming](diagramming.md) conventions
+so docs across the org stay consistent and quick to skim.
 
 ## Contents
 

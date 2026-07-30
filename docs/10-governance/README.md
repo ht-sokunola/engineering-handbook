@@ -3,22 +3,30 @@ title: Governance
 summary: Technical debt, dependencies, licences, and engineering metrics.
 status: draft
 owner: <TEAM_OR_ROLE>
-last_reviewed: 2026-07-28
+last_reviewed: 2026-07-30
 ---
 
 # Governance
 
 ## What this covers
 
-> **TODO:** Describe the scope of the Governance section in prose.
+The longer-horizon health of the engineering org: technical debt, dependency upgrades,
+library approval, licence policy, open-source contributions, and the engineering metrics
+we watch.
 
 ## Why it matters
 
-> **TODO:** Explain why this area exists and the cost of getting it wrong.
+Without governance, debt compounds quietly, dependencies drift out of support, and risky
+or non-compliant libraries creep in. These are slow-moving problems — cheap to manage
+continuously, expensive to fix once they have accumulated.
 
 ## How to use this section
 
-> **TODO:** Tell the reader how to navigate and apply the pages below.
+Track and schedule [technical debt](technical-debt.md) rather than leaving it implicit.
+Keep [dependencies](dependency-upgrades.md) current. Run new libraries through
+[approval](library-approval.md) and [licence](licence-policy.md) checks before adopting
+them. Watch the [engineering metrics](engineering-metrics.md) for trends, not just point
+values.
 
 ## Contents
 

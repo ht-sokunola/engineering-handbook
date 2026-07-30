@@ -3,22 +3,29 @@ title: Security
 summary: Secure coding, secrets, auth, encryption, scanning, and threat modelling.
 status: draft
 owner: <TEAM_OR_ROLE>
-last_reviewed: 2026-07-28
+last_reviewed: 2026-07-30
 ---
 
 # Security
 
 ## What this covers
 
-> **TODO:** Describe the scope of the Security section in prose.
+How we keep systems and data safe: secure coding, secrets handling, authentication and
+authorisation, encryption, dependency and container scanning, threat modelling, and
+vulnerability management.
 
 ## Why it matters
 
-> **TODO:** Explain why this area exists and the cost of getting it wrong.
+A single security failure can cost more than every efficiency gain combined — breached
+data, downtime, regulatory penalty, and trust that does not come back. Security is a
+property you design in from the start, not a layer you add before launch.
 
 ## How to use this section
 
-> **TODO:** Tell the reader how to navigate and apply the pages below.
+Apply the [secure-coding](secure-coding.md) rules as you write. Never commit secrets —
+use [managed secrets](secrets-management.md). [Threat-model](threat-modelling.md) anything
+that handles sensitive data or is exposed to the internet. Treat scanner findings as work
+to schedule, not noise to mute.
 
 ## Contents
 

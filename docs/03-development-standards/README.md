@@ -3,22 +3,30 @@ title: Development Standards
 summary: Identity, repositories, version control, and per-language backend/frontend standards.
 status: draft
 owner: <TEAM_OR_ROLE>
-last_reviewed: 2026-07-28
+last_reviewed: 2026-07-30
 ---
 
 # Development Standards
 
 ## What this covers
 
-> **TODO:** Describe the scope of the Development Standards section in prose.
+The day-to-day rules of writing code here: your engineer identity and commit signing,
+repository naming and structure, the version-control workflow, and the per-language
+standards for backend and frontend work.
 
 ## Why it matters
 
-> **TODO:** Explain why this area exists and the cost of getting it wrong.
+Consistency is a force multiplier. When every repository looks familiar, every commit is
+traceable, and every language has one agreed way of doing things, onboarding is faster,
+review is cheaper, and shared tooling works everywhere instead of nowhere.
 
 ## How to use this section
 
-> **TODO:** Tell the reader how to navigate and apply the pages below.
+Set up your [identity](identity/README.md) once. Then consult the relevant
+[language standard](backend/language-standards/README.md) for whatever you are writing —
+the [TypeScript page](backend/language-standards/typescript.md) is the flagship and sets
+the quality bar for the rest. Most rules here are enforced by linters, CI, and review,
+not left to memory.
 
 ## Contents
 

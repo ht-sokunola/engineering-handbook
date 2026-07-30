@@ -3,22 +3,28 @@ title: Delivery
 summary: CI/CD, environments, deployment strategies, backward compatibility, change and release management.
 status: draft
 owner: <TEAM_OR_ROLE>
-last_reviewed: 2026-07-28
+last_reviewed: 2026-07-30
 ---
 
 # Delivery
 
 ## What this covers
 
-> **TODO:** Describe the scope of the Delivery section in prose.
+How code gets from a merge to production safely: CI/CD pipelines, the environment path,
+deployment strategies, backward compatibility, change management, and release management.
 
 ## Why it matters
 
-> **TODO:** Explain why this area exists and the cost of getting it wrong.
+Delivery is where quality either reaches users or fails to. Safe, frequent, reversible
+releases are the difference between shipping calmly and firefighting — the same change is
+low-risk or high-risk depending almost entirely on how it is delivered.
 
 ## How to use this section
 
-> **TODO:** Tell the reader how to navigate and apply the pages below.
+Know the [pipeline stages](ci-cd/README.md) and the environment path a change travels.
+Pick a [deployment strategy](deployment-strategies/README.md) that matches the risk. Keep
+changes [backward compatible](backward-compatibility/README.md) and reversible, and follow
+the [change-management](change-management/README.md) process for anything significant.
 
 ## Contents
 

@@ -3,22 +3,27 @@ title: Checklists
 summary: New service, pull request, release, onboarding, and decommission checklists.
 status: draft
 owner: <TEAM_OR_ROLE>
-last_reviewed: 2026-07-28
+last_reviewed: 2026-07-30
 ---
 
 # Checklists
 
 ## What this covers
 
-> **TODO:** Describe the scope of the Checklists section in prose.
+Step-by-step lists for the high-stakes, easy-to-get-wrong moments: standing up a new
+service, opening a pull request, shipping a production release, onboarding an engineer,
+responding to an incident, and decommissioning a service.
 
 ## Why it matters
 
-> **TODO:** Explain why this area exists and the cost of getting it wrong.
+A checklist catches the step everyone knows but someone always forgets under pressure. It
+turns expert knowledge into something anyone on the team can execute reliably, on their
+first time and on their worst day.
 
 ## How to use this section
 
-> **TODO:** Tell the reader how to navigate and apply the pages below.
+Run the relevant checklist at the moment it applies, not from memory afterwards. Treat an
+unchecked item as a blocker to resolve, not a suggestion to weigh.
 
 ## Contents
 

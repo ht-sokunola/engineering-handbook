@@ -35,6 +35,8 @@ interface IndexTarget {
   dir: string;
   /** Path prefix prepended to each child link (docs/ for the root README). */
   linkPrefix: string;
+  /** When true, index only child folders (used for the root "Sections" list). */
+  foldersOnly?: boolean;
 }
 
 interface ChildEntry {
@@ -46,7 +48,7 @@ interface ChildEntry {
 
 const collectTargets = (): IndexTarget[] => {
   const targets: IndexTarget[] = [
-    { file: join(REPO_ROOT, 'README.md'), dir: DOCS_DIR, linkPrefix: 'docs/' },
+    { file: join(REPO_ROOT, 'README.md'), dir: DOCS_DIR, linkPrefix: 'docs/', foldersOnly: true },
   ];
   for (const dir of walkDirs(DOCS_DIR)) {
     if (dir === DOCS_DIR) continue; // the docs/ container is indexed by the root README above
@@ -56,7 +58,7 @@ const collectTargets = (): IndexTarget[] => {
 };
 
 /** Build the sorted child entries for a folder's generated index. */
-const collectChildren = (dir: string, linkPrefix: string): ChildEntry[] => {
+const collectChildren = (dir: string, linkPrefix: string, foldersOnly = false): ChildEntry[] => {
   const entries: ChildEntry[] = [];
   for (const entry of listEntries(dir)) {
     if (entry.isDir) {
@@ -70,7 +72,7 @@ const collectChildren = (dir: string, linkPrefix: string): ChildEntry[] => {
         summary,
       });
     } else {
-      if (entry.name === 'README.md' || !entry.name.endsWith('.md')) continue;
+      if (foldersOnly || entry.name === 'README.md' || !entry.name.endsWith('.md')) continue;
       const slug = slugOf(entry.name);
       const { title, summary } = docMeta(entry.path, slug);
       entries.push({
@@ -120,7 +122,7 @@ const main = async (): Promise<void> => {
       skipped.push(`${rel(target.file)} (no README.md)`);
       continue;
     }
-    const list = renderList(collectChildren(target.dir, target.linkPrefix));
+    const list = renderList(collectChildren(target.dir, target.linkPrefix, target.foldersOnly));
     const next = rewriteRegion(current, list);
     if (next === null) {
       skipped.push(`${rel(target.file)} (no index markers)`);

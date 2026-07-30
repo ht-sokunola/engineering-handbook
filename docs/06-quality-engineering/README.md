@@ -3,22 +3,28 @@ title: Quality Engineering
 summary: Testing, regression, performance testing, and accessibility.
 status: draft
 owner: <TEAM_OR_ROLE>
-last_reviewed: 2026-07-28
+last_reviewed: 2026-07-30
 ---
 
 # Quality Engineering
 
 ## What this covers
 
-> **TODO:** Describe the scope of the Quality Engineering section in prose.
+How we know the software works and keeps working: the testing pyramid, regression
+protection for critical journeys, performance testing, and accessibility.
 
 ## Why it matters
 
-> **TODO:** Explain why this area exists and the cost of getting it wrong.
+Tests are how we change code quickly without fear. Where quality coverage is thin, the
+gaps resurface as production incidents, slow and nervous releases, and eroded confidence
+in the codebase.
 
 ## How to use this section
 
-> **TODO:** Tell the reader how to navigate and apply the pages below.
+Write tests at the right level — mostly [unit](testing/unit.md), fewer as you climb the
+pyramid. Protect [critical user journeys](regression/critical-user-journeys.md) from
+regression. Meet the [accessibility](accessibility/README.md) bar for anything a user
+touches.
 
 ## Contents
 

@@ -3,22 +3,28 @@ title: Templates
 summary: Copyable ADR, RFC, design doc, incident, runbook, and review templates.
 status: draft
 owner: <TEAM_OR_ROLE>
-last_reviewed: 2026-07-28
+last_reviewed: 2026-07-30
 ---
 
 # Templates
 
 ## What this covers
 
-> **TODO:** Describe the scope of the Templates section in prose.
+Copy-paste starting points for the documents we write repeatedly: ADRs, RFCs, design
+docs, pull requests, incident reports, postmortems, runbooks, API specifications, the
+review templates, and the migration plan.
 
 ## Why it matters
 
-> **TODO:** Explain why this area exists and the cost of getting it wrong.
+Templates make good documents the path of least resistance. They ensure the important
+questions get asked every time — not only when the author happens to remember them —
+and they make documents of the same kind comparable across teams.
 
 ## How to use this section
 
-> **TODO:** Tell the reader how to navigate and apply the pages below.
+Copy the relevant template's marked region into your own document and fill it in. Each
+template delimits its copyable body with `<!-- template:start -->` / `<!-- template:end -->`.
+Do not edit a template in place for one specific document; edit your copy.
 
 ## Contents
 

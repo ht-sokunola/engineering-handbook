@@ -8,6 +8,9 @@ If you write, review, ship, or operate code here, this is the book you reach for
 when you need to know _how we do it_ — and the place you propose a change when
 "how we do it" should be different.
 
+> **Start here:** the [Decision Framework](docs/decision-framework.md) — ten questions
+> to run any build, buy, or significant-change decision through before you commit to it.
+
 ## How this handbook is organised
 
 The whole repository hangs on one structural rule:

@@ -3,22 +3,29 @@ title: Operations
 summary: Observability, incident management, runbooks, and performance.
 status: draft
 owner: <TEAM_OR_ROLE>
-last_reviewed: 2026-07-28
+last_reviewed: 2026-07-30
 ---
 
 # Operations
 
 ## What this covers
 
-> **TODO:** Describe the scope of the Operations section in prose.
+Running what we have shipped: observability, incident management, runbooks, and
+production performance.
 
 ## Why it matters
 
-> **TODO:** Explain why this area exists and the cost of getting it wrong.
+Software spends almost all of its life in production, not in development. If you cannot
+see a system, respond to it when it breaks, or operate it under load, availability and
+user trust are the things that pay for it.
 
 ## How to use this section
 
-> **TODO:** Tell the reader how to navigate and apply the pages below.
+Instrument every service so it is [observable](observability/README.md) from day one.
+Keep a [runbook](runbooks.md) for anything that can page someone. Learn the incident
+[severity levels](incident-management/severity-levels.md) and
+[escalation](incident-management/escalation.md) path before you need them, not during an
+incident.
 
 ## Contents
 

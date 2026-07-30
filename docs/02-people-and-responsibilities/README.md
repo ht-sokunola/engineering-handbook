@@ -3,22 +3,29 @@ title: People and Responsibilities
 summary: Roles, ownership, and who decides what.
 status: draft
 owner: <TEAM_OR_ROLE>
-last_reviewed: 2026-07-28
+last_reviewed: 2026-07-30
 ---
 
 # People and Responsibilities
 
 ## What this covers
 
-> **TODO:** Describe the scope of the People and Responsibilities section in prose.
+Who does what, who owns what, and who decides. Role expectations across the ladder, the
+ownership model that keeps every repository, service, and API accountable to someone,
+the tech-lead role, and the architecture board.
 
 ## Why it matters
 
-> **TODO:** Explain why this area exists and the cost of getting it wrong.
+Software with no owner rots; a decision with no decider stalls. As an org grows, clear
+ownership and clear authority are what let it keep moving without teams stepping on each
+other or work falling through the gaps.
 
 ## How to use this section
 
-> **TODO:** Tell the reader how to navigate and apply the pages below.
+Find the expectations for your role and the roles you work with. Before you start work,
+know who owns the repository, service, or API you are touching. Escalate architecture-level
+questions to the [architecture board](architecture-board.md) rather than deciding them in
+isolation.
 
 ## Contents
 
